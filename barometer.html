@@ -13,20 +13,29 @@
         <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600'>
         <link rel="stylesheet" href="main.css">
         <link rel="stylesheet" href="normalize.css">
-        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+
         <link rel="icon" id="favicon" href="favicon.png">
+        <script type='text/javascript'>
+        </script>
 
     </head>
 
     <body>
         <div class="wrapper">
 
-           <header class="header">
+            <header class="header">
                 <a href="index.html"><img src="STG.jpg"></a>
             </header>
 
             <div role="main">
-                    <h1>Sarah is a designer interested in interaction, data and networks in the public domain. Her practise examines technopolitics, privacy and civics. She is founder of the creative company <a href="https://project-if.com/">IF</a>.</h1>
+
+
+            <canvas id="can_canvas" width="600" height="600">
+            </canvas>
+    <h2>
+        <p>
+            NEW TEXT HERE AND YOU CAN <a href="#" onclick="window.location.reload();">refresh</a>. The code for the barometer was forked by Mark Haworth, and is shared under a Public Domain licence.</p>
+    </h2>
 
             </div>
 
@@ -43,4 +52,9 @@
 
         </div>
     </body>
+            <script type="text/javascript" src="barometerbits/jquery.min.js"></script>
+        <script type="text/javascript" src="barometerbits/triangulate.js"></script>
+        <script type="text/javascript" src="barometerbits/particle.js"></script>
+        <script type="text/javascript" src="barometerbits/main.js"></script>
+        <script src="barometerbits/m.js"></script>
 </html>
