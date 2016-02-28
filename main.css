@@ -11,7 +11,7 @@ body {
   text-rendering: optimizeLegibility;
 }
 
-header a img {
+header a.img {
   position:fixed;
   padding-top: 1em;
   z-index: -100;
