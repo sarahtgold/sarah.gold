@@ -1,0 +1,22 @@
+{
+  "name": "sarah.gold",
+  "version": "1.0.0",
+  "description": "My website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sarahtgold/sarah.gold.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sarahtgold/sarah.gold/issues"
+  },
+  "homepage": "https://github.com/sarahtgold/sarah.gold#readme",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
+}
