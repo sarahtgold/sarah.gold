@@ -17,8 +17,13 @@ header a.img {
   z-index: -100;
 }
 
-.bigger_footer {
-  margin-bottom:3em;
+footer {
+  background:#FFF !important;
+  position:fixed;
+  bottom:0;
+  left:0;
+  padding:1em 2.5em 1em 2.5em;
+  width:100vw;
 }
 
 ul {
@@ -69,8 +74,7 @@ h2 a:hover {
 }
 
 .header,
-div[role="main"],
-.footer {
+div[role="main"] {
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flexbox;
@@ -121,16 +125,8 @@ div[role="main"] {
   height: 90vh;
 }
 
-.footer {
-  -webkit-align-self: flex-end;
-  -moz-align-self: flex-end;
-  -ms-align-self: flex-end;
-  -ms-flex-align: flex-end;
-  align-self: flex-end;
-  padding-left: 15em;
-}
 
-.footer ul {
+footer ul {
   margin: 0;
   padding: 0;
   letter-spacing: 1px;
@@ -138,20 +134,20 @@ div[role="main"] {
   font-size: 1.5em;
 }
 
-.footer li {
-  display: inline;
-  margin-bottom: 2em;
+footer li {
+  display: inline-block;
+  margin-bottom: 0.5em;
   margin-right: 1em;
   border-bottom: 3px solid #00E5CF;
 }
 
-.footer li a {
+footer li a {
   text-decoration: none;
   color: #1e1e1e;
   border-bottom: 3px solid #00E5CF;
 }
 
-.footer a:hover {
+footer a:hover {
   border-bottom: 3px solid #1e1e1e;
 }
 
@@ -169,13 +165,14 @@ div[role="main"] {
     font-size: 1.2rem;
     margin: 1em 0 0.25em;
   }
+
   .header,
-  div[role="main"],
-  .footer {
+  div[role="main"] {
     display: block;
     padding: 0.5em 0;
     z-index: 100;
   }
+
   header a img {
     position:inherit;
     width:75px;
@@ -192,6 +189,14 @@ div[role="main"] {
   }
 }
 
+@media only screen and (min-width: 650px) {
+  footer {
+    background:#FFF !important;
+    z-index:1000;
+    padding-left:6em;
+  }
+}
+
 @media only screen and (max-width: 900px) {
   div[role="main"] {
     padding-left: 0;
@@ -203,8 +208,15 @@ div[role="main"] {
     width:100px;
   }
 
-  .footer {
-    padding-left: 0;
+  footer {
     font-size: 0.9em;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  footer {
+    background:none;
+    position:inherit;
+    padding-left:15em;
   }
 }
