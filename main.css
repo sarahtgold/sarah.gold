@@ -189,11 +189,46 @@ footer a:hover {
   }
 }
 
+.home_copy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.home_copy div {
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+footer.home {
+  padding: 0;
+  height: 71px;
+  width: calc(100vw - 4em);
+  position: absolute;
+  bottom: 2em;
+  left: 2em;
+}
+
+.home_wrapper {
+  width: calc(100vw - 4em);
+  height: calc(100vh - 4em);
+}
+
 @media only screen and (min-width: 650px) {
   footer {
     background:#FFF !important;
     z-index:1000;
     padding-left:6em;
+  }
+
+  footer.home {
+    height: 32px;
+    padding-left: 5em;
   }
 }
 
